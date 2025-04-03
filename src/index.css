@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bannerIcon {
+        @apply w-16 h-16 text-gray-200 bg-black bg-opacity-25 text-xl cursor-pointer
+            inline-flex items-center justify-center rounded-md shadow-shadowOne
+            hover:bg-opacity-40 hover:-translate-y-1 hover:text-primaryColor
+            transition-all duration-300
+    }
+    .bgOpacity {
+        @apply bg-black bg-opacity-40;
+    }
+    .contactInput {
+        @apply w-full h-12 rounded-lg border-b border-b-gray-600 bg-[#191b1e] text-lightColor
+            px-4 active:outline-none focus-visible:outline-primaryColor focus-visible:outline-1
+            outline-none focus-visible:border-b-transparent duration-300;
+    }
+}
+
+.active {
+    color: #ff014f;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ff014f;
+    border-radius: 2px;
+}
