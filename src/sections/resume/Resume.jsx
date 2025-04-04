@@ -25,13 +25,15 @@ function Resume() {
   ];
   const [selectedItem, setSelectedItem] = useState(1);
   return (
-    <div id='resume'
+    <section id='resume'
       className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
       <div>
         <SectionTitle title={`${new Date().getFullYear() - 2023}+ YEARS OF EXPERIENCE`} desc='My Resume' />
         {/* download resume */}
         <div className="text-center mt-6">
-          <a href="/Abdelaziz_Mohamed_Resume.pdf" download="Abdelaziz_Mohamed_Resume.pdf"
+          <a // download resume from google drive
+            href="https://drive.google.com/uc?export=download&id=1Xc03_B_74nBhM5XPVKWeC89uWVBXlFxy"
+            rel="noopener noreferrer"
             className="bg-boxBg text-white border border-gray-700 py-3 px-6 rounded-lg font-semibold font-bodyFont shadow-2xl
               hover:text-primaryColor hover:border-[#ff014d85] transition duration-300 flex items-center justify-center gap-2">
             <FaDownload /> Download Resume
@@ -58,7 +60,7 @@ function Resume() {
           { selectedItem === 3 && <Experience title={navItems[2].title} icon={navItems[2].icon} /> }
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

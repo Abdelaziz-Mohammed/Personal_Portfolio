@@ -21,6 +21,11 @@ export const navLinksData = [
   },
   {
     id: 5,
+    title: "Certificates",
+    link: "certificates",
+  },
+  {
+    id: 6,
     title: "Contact",
     link: "contact",
   },
