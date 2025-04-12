@@ -9,8 +9,12 @@ import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 // scroll to top
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { i18n } = useTranslation();
+  // Set the lang attribute based on the current language
+  document.documentElement.setAttribute('lang', i18n.language);
   return (
     <div className="w-full h-auto bg-bodyBg text-lightColor">
       <div className='max-w-screen-2xl mx-auto px-16'>

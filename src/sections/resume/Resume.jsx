@@ -4,22 +4,24 @@ import { FaDownload, FaBriefcase, FaGraduationCap, FaCode } from "react-icons/fa
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
+import { useTranslation } from 'react-i18next';
 
 function Resume() {
+  const {t} = useTranslation();
   const navItems = [
     {
       id: 1,
-      title: "Education",
+      title: t('resume.nav.education'),
       icon: <FaGraduationCap className='text-3xl text-lightColor' />,
     },
     {
       id: 2,
-      title: 'Skills',
+      title: t('resume.nav.skills'),
       icon: <FaCode className='text-3xl text-lightColor' />,
     },
     {
       id: 3,
-      title: 'Experience',
+      title: t('resume.nav.experience'),
       icon: <FaBriefcase className='text-3xl text-lightColor' />,
     }
   ];
@@ -28,7 +30,7 @@ function Resume() {
     <section id='resume'
       className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
       <div>
-        <SectionTitle title={`${new Date().getFullYear() - 2023}+ YEARS OF EXPERIENCE`} desc='My Resume' />
+        <SectionTitle title={t('resume.title', { years: new Date().getFullYear() - 2023 })} desc={t('resume.desc')} />
         {/* download resume */}
         <div className="text-center mt-6">
           <a // download resume from google drive
@@ -36,7 +38,7 @@ function Resume() {
             rel="noopener noreferrer"
             className="bg-boxBg text-white border border-gray-700 py-3 px-6 rounded-lg font-semibold font-bodyFont shadow-2xl
               hover:text-primaryColor hover:border-[#ff014d85] transition duration-300 flex items-center justify-center gap-2">
-            <FaDownload /> Download Resume
+            <FaDownload /> {t('resume.download')}
           </a>
         </div>
         {/* resume content */}

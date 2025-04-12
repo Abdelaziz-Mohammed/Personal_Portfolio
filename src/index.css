@@ -34,3 +34,24 @@
     background-color: #ff014f;
     border-radius: 2px;
 }
+
+/* language toggle */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+  
+html[dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* handle font on language change */
+html {
+    font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+/* Apply Arabic font when the language is Arabic */
+html[lang="ar"] {
+    font-family: 'Cairo', sans-serif !important;
+}

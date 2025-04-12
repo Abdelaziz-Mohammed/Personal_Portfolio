@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         bodyFont: ['Poppins', 'sans-serif'],
         titleFont: ['Montserrat', 'sans-serif'],
+        arabicFont: ['Cairo', 'sans-serif'],
       },
       colors: {
         primaryColor: '#ff014f', // primary text color
@@ -21,6 +22,17 @@ export default {
       boxShadow: {
         shadowOne: '10px 10px 19px #1c1e22, -10px -10px 19px #262a2e',
       },
+      // my screens for responsive
+      // screens: {
+      //   xs: '320px',
+      //   sm: '375px',
+      //   md: '500px',
+      //   lg: '667px',
+      //   xl: '768px',
+      //   '2xl': '960px',
+      //   '3xl': '1024px',
+      //   '4xl': '1280px',
+      // },
     },
   },
   plugins: [],

@@ -1,0 +1,156 @@
+{
+    "navbar": {
+        "logo_title": "Abdelaziz",
+        "toggle_lang": "العربية",
+        "nav_links": {
+            "home": "Home",
+            "features": "Features",
+            "projects": "Projects",
+            "resume": "Resume",
+            "certificates": "Certificates",
+            "contact": "Contact"
+        }
+    },
+    "banner": {
+        "welcome_message": "WELCOME TO MY WORLD",
+        "hi_im": "Hi, I'm",
+        "name": "Abdelaziz Mohamed",
+        "typewriter_message": "Software Engineer.,React Developer.,Frontend Developer.,Node.js Developer.,Backend Developer.",
+        "specialize": "I specialize in creating modern, interactive, and responsive web interfaces.",
+        "skills_description": "With expertise in React, Tailwind, and JavaScript, I focus on crafting seamless user experiences that bring ideas to life.",
+        "hire_me": "Hire Me",
+        "find_me_in": "Find Me In",
+        "top_skills": "Top Skills"
+    },
+    "features": {
+        "title": "Features",
+        "desc": "What I Do",
+        "frontend_dev": {
+        "title": "Frontend Development",
+        "desc": "Developing modern, responsive, and interactive web applications using React.js, Tailwind CSS, Bootstrap, HTML, CSS, and JavaScript."
+        },
+        "react_expertise": {
+            "title": "React.js Expertise",
+            "desc": "Building dynamic, reusable components while managing state efficiently with hooks, ensuring high performance and seamless user experience."
+        },
+        "tailwind_css": {
+            "title": "Tailwind CSS & Styling",
+            "desc": "Creating sleek and fully responsive UI designs with Tailwind CSS, focusing on efficiency, scalability, and modern design principles."
+        },
+        "api_integration": {
+            "title": "API Integration",
+            "desc": "Fetching and displaying real-time data by integrating frontend applications with RESTful APIs, ensuring smooth and structured communication."
+        },
+        "performance_optimization": {
+            "title": "Performance Optimization",
+            "desc": "Boosting website speed, reducing load times, and optimizing frontend performance using best coding practices and efficient asset management."
+        },
+        "ui_ux": {
+            "title": "UI/UX Implementation",
+            "desc": "Designing visually appealing interfaces with a strong emphasis on usability, accessibility, and fluid animations for better user engagement."
+        }
+    },      
+    "projects": {
+        "title": "VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK",
+        "desc": "My Projects",
+        "projectDetails": [
+            {
+                "title": "Shopy E-Commerce",
+                "status": "Ongoing",
+                "desc": "A fully responsive e-commerce web app built with React, React Router, and Tailwind CSS, offering product browsing, cart management, checkout, and more."
+            },
+            {
+                "title": "Coral E-Commerce",
+                "status": "Finished",
+                "desc": "An interactive e-commerce app built with React, React Router, and Tailwind CSS, featuring a product catalog, cart functionality, and a mock JSON database."
+            },
+            {
+                "title": "University Website",
+                "status": "Finished",
+                "desc": "A React-based university simulation app that allows users to explore academic schedules, courses, and campus-related activities interactively."
+            },
+            {
+                "title": "Landing Page",
+                "status": "Finished",
+                "desc": "A modern landing page built with React and Tailwind CSS, featuring interactive sections like testimonials, social links, and a responsive layout."
+            },
+            {
+                "title": "Quiz App",
+                "status": "Finished",
+                "desc": "A simple quiz application using HTML, CSS, and JavaScript, featuring dynamic questions, a scoring system, and an engaging user interface."
+            },
+            {
+                "title": "Notes App",
+                "status": "Finished",
+                "desc": "A note-taking application using HTML, CSS, and JavaScript, allowing users to create, edit, and delete notes with a clean and intuitive design."
+            }
+        ]
+    },
+    "resume": {
+        "title": "{{years}}+ YEARS OF EXPERIENCE",
+        "desc": "My Resume",
+        "download": "Download Resume",
+        "nav": {
+            "education": "Education",
+            "skills": "Skills",
+            "experience": "Experience"
+        },
+        "education": {
+            "university": "Menofia University",
+            "faculty": "Faculty of Electronic Engineering",
+            "degree": "Bachelor of Computer Science and Engineering",
+            "gpa": "GPA: 3.84",
+            "duration": "2022 - 2026"
+        },
+        "experience": [
+            {
+                "role": "Front-End Head at IEEE Menofia University",
+                "company": "IEEE Menofia University",
+                "period": "Feb 2025 - Present",
+                "desc": "Leading and mentoring the front-end development team in creating high-quality web projects and workshops within the student branch. Organizing technical sessions, reviewing code, and supporting members in learning modern tools like React.js, Tailwind CSS, and GitHub. Contributing to the strategic planning and execution of technical activities while fostering a collaborative and growth-oriented environment."
+            },
+            {
+                "role": "Front-End React Developer",
+                "company": "Collaborative Team of Peers",
+                "period": "Jan 2025 - Present",
+                "desc": "Contributing to the development of full-stack applications (web and mobile) using React.js, API integration, and Git version control. Collaborating closely with a cross-functional team including back-end developers (Node.js, Express), mobile developers (Flutter), and UI/UX designers. Taking responsibility for UI implementation, performance optimization, and responsive design, while following clean code principles and Agile practices."
+            }
+        ]
+    },
+    "certificates": {
+        "title": "VERIFIED LEARNING",
+        "desc": "My Certificates",
+        "viewButton": "View Certificate"
+    },
+    "contact": {
+        "title": "CONTACT",
+        "desc": "Contact With Me",
+        "name": "Your Name",
+        "phone": "Phone Number",
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "success": "Thanks dear {{name}}, Your Message Has Been Sent Successfully!",
+        "error": {
+            "nameRequired": "Name is required!",
+            "phoneRequired": "Phone number is required!",
+            "phoneNumber": "Phone number must contain only numbers!",
+            "phoneLength": "Phone number must be at least 7 digits long!",
+            "emailRequired": "Email is required!",
+            "emailInvalid": "Invalid email address!",
+            "subjectRequired": "Subject is required!",
+            "messageRequired": "Please type your message!"
+        },
+        "side": {
+            "myName": "Abdelaziz Mohamed",
+            "developer": "MERN Stack Developer",
+            "descLine": "Feel free to reach out, I'd love to collaborate and work together!",
+            "findMe": "Find Me In"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved by",
+        "myName": "Abdelaziz Mohamed"
+    }
+}

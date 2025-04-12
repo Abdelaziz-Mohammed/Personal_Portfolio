@@ -19,8 +19,10 @@ import Slider from "react-slick";
 // custom slider arrows
 import PrevArrow from './PrevArrow';
 import NextArrow from './NextArrow';
+import { useTranslation } from "react-i18next";
 
 function Certificates() {
+  const {t} = useTranslation();
   const certificates = [
     {
       id: 1,
@@ -107,15 +109,20 @@ function Certificates() {
     <section id='certificates'
       className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
       <div>
-        <SectionTitle title='VERIFIED LEARNING' desc='My Certificates' />
+        <SectionTitle title={t('certificates.title')} desc={t('certificates.desc')} />
         {/* certificates slider */}
         <Slider {...settings}>
           {
             certificates.map(certificate =>
               <div key={certificate.id}
-                className="rounded-lg">
+                className="rounded-lg relative">
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 text-xl text-lightColor bg-[#0c1821] h-10 w-24
+                  flex items-center justify-center tracking-wide rounded-lg shadow-lg border border-neutral-700
+                  font-bold hover:border-primaryColor transition-colors duration-500">
+                  {certificate.id}{" / "}{certificates.length}
+                </span>
                 <img src={certificate.imageSrc} alt={certificate.title}
-                  className="max-w-[600px] w-full h-auto rounded-lg object-contain mx-auto"/>
+                  className="max-w-[600px] w-full h-auto rounded-lg object-contain mx-auto mt-16"/>
                 <a
                   aria-label={`View ${certificate.title}`}
                   href={certificate.link}
@@ -124,7 +131,7 @@ function Certificates() {
                   title={certificate.title}
                   className="text-center text-lg font-bold tracking-wider w-full max-w-[600px] mx-auto mt-3
                     flex items-center justify-center bg-black shadow-lg rounded-lg py-2 hover:text-primaryColor transition-colors duration-500">
-                  View Certificate
+                  {t('certificates.viewButton')}
                 </a>
               </div>
             )

@@ -1,39 +1,40 @@
-
 import SectionTitle from './../../components/layouts/SectionTitle';
 import FeatureBox from './FeatureBox';
 import { FaBolt, FaChartLine, FaCode, FaFigma , FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 
 function Features() {
+  const {t} = useTranslation();
   const features = [
     {
-      title: "Frontend Development",
-      desc: "Developing modern, responsive, and interactive web applications using React.js, Tailwind CSS, Bootstrap, HTML, CSS, and JavaScript.",
+      title: t('features.frontend_dev.title'),  // Use translation key
+      desc: t('features.frontend_dev.desc'),
       icon: <FaCode className="text-primaryColor text-4xl" />,
     },
     {
-      title: "React.js Expertise",
-      desc: "Building dynamic, reusable components while managing state efficiently with hooks, ensuring high performance and seamless user experience.",
+      title: t('features.react_expertise.title'),
+      desc: t('features.react_expertise.desc'),
       icon: <FaReact className="text-primaryColor text-4xl animate-spin" style={{ animationDuration: '3s' }} />,
     },
     {
-      title: "Tailwind CSS & Styling",
-      desc: "Creating sleek and fully responsive UI designs with Tailwind CSS, focusing on efficiency, scalability, and modern design principles.",
+      title: t('features.tailwind_css.title'),
+      desc: t('features.tailwind_css.desc'),
       icon: <RiTailwindCssFill className="text-primaryColor text-4xl" />,
     },
     {
-      title: "API Integration" ,
-      desc: "Fetching and displaying real-time data by integrating frontend applications with RESTful APIs, ensuring smooth and structured communication.",
+      title: t('features.api_integration.title'),
+      desc: t('features.api_integration.desc'),
       icon: <FaBolt className="text-primaryColor text-4xl" />,
     },
     {
-      title: "Performance Optimization" ,
-      desc: "Boosting website speed, reducing load times, and optimizing frontend performance using best coding practices and efficient asset management.",
+      title: t('features.performance_optimization.title'),
+      desc: t('features.performance_optimization.desc'),
       icon: <FaChartLine className="text-primaryColor text-4xl" />,
     },
     {
-      title: "UI/UX Implementation",
-      desc: "Designing visually appealing interfaces with a strong emphasis on usability, accessibility, and fluid animations for better user engagement.",
+      title: t('features.ui_ux.title'),
+      desc: t('features.ui_ux.desc'),
       icon: <FaFigma className="text-primaryColor text-4xl" />,
     },
   ];
@@ -41,7 +42,7 @@ function Features() {
     <section id="features"
       className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
       <div className='flex flex-col'>
-        <SectionTitle title='Features' desc='What I Do' />
+        <SectionTitle title={t('features.title')} desc={t('features.desc')} />
         {/* feature boxes */}
         <div className='grid grid-cols-3 gap-20'>
           {

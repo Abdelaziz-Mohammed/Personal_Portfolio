@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 function Footer() {
+  const {t} = useTranslation();
   return (
     <section>
       <div className="text-center py-8 text-base text-gray-500">
-        &copy; {new Date().getFullYear()}. All rights reserved by {" "}
+        &copy; {new Date().getFullYear()}. {t("footer.rights")}{" "}
         <a href="https://www.linkedin.com/in/abdelaziz/" target="_blank"
           className="text-primaryColor">
-          Abdelaziz Mohamed
+          {t('footer.myName')}
         </a>
       </div>
     </section>

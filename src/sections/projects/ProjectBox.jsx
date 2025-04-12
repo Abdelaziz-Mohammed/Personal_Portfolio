@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithub, FaGlobe } from "react-icons/fa6";
 
-function ProjectBox({ title, desc, image, github, demo }) {
+function ProjectBox({ title, status, desc, image, github, demo }) {
   return (
     <div className="w-full h-auto px-12 py-10 rounded-lg shadow-shadowOne flex flex-col
       bg-gradient-to-r from-bodyBg to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900
@@ -29,6 +29,9 @@ function ProjectBox({ title, desc, image, github, demo }) {
               </a>
             </div>
           </div>
+          <p className='text-sm text-green-500 font-normal -mt-5 mb-3'>
+            {status}
+          </p>
           <p className='text-[16px] font-bodyFont text-lightColor'>
             {desc}
           </p>
