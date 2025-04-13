@@ -107,7 +107,7 @@ function Certificates() {
   };
   return (
     <section id='certificates'
-      className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
+      className="w-full py-10 lg:py-20 border-b-[1px] border-b-black font-titleFont">
       <div>
         <SectionTitle title={t('certificates.title')} desc={t('certificates.desc')} />
         {/* certificates slider */}

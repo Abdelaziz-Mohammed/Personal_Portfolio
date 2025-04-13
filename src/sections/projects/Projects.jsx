@@ -58,11 +58,11 @@ function Projects() {
   ];
   return (
     <section id='projects'
-      className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
+      className="w-full py-10 lg:py-20 border-b-[1px] border-b-black font-titleFont">
       <div className="flex flex-col">
         <SectionTitle title={t('projects.title')} desc={t('projects.desc')} />
         {/* projects boxes */}
-        <div className="grid grid-cols-3 gap-20">
+        <div className="flex flex-wrap justify-evenly gap-y-10 gap-x-5">
           {
             projects.map((project, index) => 
               <ProjectBox key={index}

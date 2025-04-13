@@ -1,6 +1,7 @@
 // import all images from assets and export them easily
 import logoImg from './images/logo-img.png';
 import bannerImg from './images/banner-img.png';
+import profileImg from './images/profile-img.png';
 // projects images
 import shopyECommerceImg from './images/projects/shopy-e-commerce-img.png';
 import coralECommerceImg from './images/projects/coral-e-commerce-img.png';
@@ -26,6 +27,7 @@ import Web_Development_Program_Creativa_Hub_Menoufia_Certificate_Img from './ima
 export {
     logoImg,
     bannerImg,
+    profileImg,
     // projects images
     shopyECommerceImg,
     coralECommerceImg,

@@ -39,7 +39,7 @@ function Experience({title, icon}) {
           experiences.map(exp => 
             <div key={exp.id} className='bg-[#23272b] p-5 rounded-lg shadow-lg flex flex-col gap-3'>
               <div className='flex items-center justify-between gap-10'>
-                <h3 className='text-lg font-bold text-lightColor'>{exp.role}</h3>
+                <h3 className='text-base lg:text-lg font-bold text-lightColor'>{exp.role}</h3>
                 <button onClick={() => handleOpen(exp.id)}
                   className='flex items-center justify-center w-10 h-6 rounded-lg bg-[#1e2024]'>
                   {
@@ -51,10 +51,10 @@ function Experience({title, icon}) {
                   }
                 </button>
               </div>
-              <p className='text-sm text-gray-400'>
-                <span className='font-semibold text-base'>{exp.company}</span>
+              <p className='text-gray-400'>
+                <span className='text-sm lg:text-base font-semibold'>{exp.company}</span>
                 <span className='text-sm text-primaryColor px-1'>{" | "}</span>
-                <span className='text-gray-500 tracking-wide'>{exp.period}</span>
+                <span className='text-sm text-gray-500 tracking-wide'>{exp.period}</span>
               </p>
               {
                 (openId === exp.id)

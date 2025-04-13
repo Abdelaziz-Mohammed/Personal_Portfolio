@@ -131,11 +131,11 @@ function Contact() {
   }
   return (
     <div id='contact'
-      className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
+      className="w-full py-10 lg:py-20 border-b-[1px] border-b-black font-titleFont">
       <SectionTitle title={t("contact.title")} desc={t("contact.desc")} />
       {/* content */}
-      <div className='w-full flex justify-between'>
-        <div className='w-[35%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 shadow-shadowOne rounded-lg
+      <div className='w-full flex flex-col 2xl:flex-row justify-between gap-y-10 gap-x-10'>
+        <div className='w-full 2xl:w-[340px] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 shadow-shadowOne rounded-lg
           flex flex-col gap-5'>
           <img src={contactImg} alt="contact-img"
             className='w-full rounded-lg'/>
@@ -168,18 +168,18 @@ function Contact() {
             </div>  
           </div>
         </div>
-        <div className='w-[60%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 shadow-shadowOne rounded-lg
+        <div className='w-full 2xl:flex-1 bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 shadow-shadowOne rounded-lg
           flex flex-col gap-8'>
           <form className='w-full grid grid-cols-2 gap-x-10 gap-y-5'>
             {/* name */}
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 col-span-2 xl:col-span-1 2xl:col-span-2 3xl:col-span-1'>
               <label htmlFor="name" className='text-sm text-gray-400 tracking-wide'>{t('contact.name')}</label>
               <input type="text" name="name" id="name" className={`contactInput ${nameErrorMessage !== "" && 'border-red-500'}`}
                 value={name} onChange={(e) => setName(e.target.value)}/>
               <span className='text-xs text-red-500 ps-2 -mt-1'>{nameErrorMessage}</span>
             </div>
             {/* phone */}
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 col-span-2 xl:col-span-1 2xl:col-span-2 3xl:col-span-1'>
               <label htmlFor="phone" className='text-sm text-gray-400 tracking-wide'>{t('contact.phone')}</label>
               <input type="text" name="phone" id="phone" className={`contactInput ${phoneErrorMessage !== "" && 'border-red-500'}`}
                 value={phone} onChange={(e) => setPhone(e.target.value)}/>

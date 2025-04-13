@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const SkillBar = ({ progress }) => {
-  console.log(progress);
   const [width, setWidth] = useState(0);
   useEffect(() => {
     setWidth(progress);

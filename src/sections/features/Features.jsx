@@ -40,11 +40,11 @@ function Features() {
   ];
   return (
     <section id="features"
-      className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
+      className="w-full py-10 lg:py-20 border-b-[1px] border-b-black font-titleFont">
       <div className='flex flex-col'>
         <SectionTitle title={t('features.title')} desc={t('features.desc')} />
         {/* feature boxes */}
-        <div className='grid grid-cols-3 gap-20'>
+        <div className='flex flex-wrap justify-evenly gap-y-10 gap-x-5'>
           {
             features.map((feature, index) =>
               <FeatureBox key={index}

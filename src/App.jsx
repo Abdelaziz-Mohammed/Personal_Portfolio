@@ -8,7 +8,7 @@ import Certificates from './sections/certificates/Certificates';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 // scroll to top
-import ScrollToTop from './components/scrolltotop/ScrollToTop';
+import ScrollToTop from './components/common/ScrollToTop';
 import { useTranslation } from 'react-i18next';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   document.documentElement.setAttribute('lang', i18n.language);
   return (
     <div className="w-full h-auto bg-bodyBg text-lightColor">
-      <div className='max-w-screen-2xl mx-auto px-16'>
+      <div className='mx-auto px-6 lg:px-14'>
         <Navbar />
         {/* sections */}
         <Banner />

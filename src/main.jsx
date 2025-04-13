@@ -7,7 +7,7 @@ import App from './App.jsx'
 // translation support
 import { Suspense } from 'react';
 import './i18n';
-import FullPageLoader from './components/fullpageloader/FullPageLoader';
+import FullPageLoader from './components/common/FullPageLoader';
 
 createRoot(document.getElementById('root')).render(
   <Suspense fallback={FullPageLoader}>

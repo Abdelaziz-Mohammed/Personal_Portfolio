@@ -28,7 +28,7 @@ function Resume() {
   const [selectedItem, setSelectedItem] = useState(1);
   return (
     <section id='resume'
-      className="w-full py-20 border-b-[1px] border-b-black font-titleFont">
+      className="w-full py-10 lg:py-20 border-b-[1px] border-b-black font-titleFont">
       <div>
         <SectionTitle title={t('resume.title', { years: new Date().getFullYear() - 2023 })} desc={t('resume.desc')} />
         {/* download resume */}
@@ -48,7 +48,7 @@ function Resume() {
             {
               navItems.map(item =>
                 <li key={item.id} onClick={() => setSelectedItem(item.id)}
-                  className={`w-1/3 h-16 flex items-center justify-center first:rounded-lg
+                  className={`w-1/3 h-16 flex items-center justify-center first:rounded-lg text-xs lg:text-sm
                     ${item.id === selectedItem ? 'border border-[#ff014db0] text-primaryColor' : 'border border-black'}
                     uppercase tracking-wide hover:text-primaryColor rounded-lg cursor-pointer ease-linear duration-200`}>
                   {item.title}

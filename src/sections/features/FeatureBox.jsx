@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function FeatureBox({ title, desc, icon }) {
   return (
-    <div className="w-full h-80 px-12 py-10 rounded-lg shadow-shadowOne flex items-center
+    <div className="w-full max-w-[340px] h-80 px-6 py-8 rounded-lg shadow-shadowOne flex items-center
       bg-gradient-to-r from-bodyBg to-[#202327] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024]
       transition-colors duration-100 overflow-hidden">
       <div className="flex flex-col gap-5 translate-y-14 group-hover:translate-y-0 transition-transform duration-500">
